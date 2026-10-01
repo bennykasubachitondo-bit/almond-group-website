@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Almond Group of Consultants — AI consulting for NGOs, development organisations and public-health organisations.">
+  <title>Almond Group of Consultants | AI for Development</title>
+  <style>
+    :root{
+      --ink:#12251d;
+      --muted:#5d6c65;
+      --cream:#f7f4ec;
+      --white:#ffffff;
+      --green:#123d2d;
+      --green2:#1e6045;
+      --gold:#c79b45;
+      --line:#dfe5df;
+      --soft:#edf4ef;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+    .navin{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:-.5px;font-size:20px}
+    .brand span{color:var(--gold)}
+    .links{display:flex;gap:26px;font-size:14px;color:var(--muted)}
+    .links a:hover{color:var(--green)}
+    .btn{display:inline-block;background:var(--green);color:white;padding:13px 20px;border-radius:8px;font-weight:700;font-size:14px}
+    .btn:hover{background:var(--green2)}
+    .hero{background:var(--cream);padding:92px 0 88px}
+    .eyebrow{color:var(--gold);font-size:13px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:18px}
+    h1{font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-3px;max-width:850px}
+    h1 span{color:var(--green2)}
+    .hero p{font-size:20px;color:var(--muted);max-width:720px;margin:25px 0 32px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn.alt{background:white;color:var(--green);border:1px solid var(--line)}
+    section{padding:82px 0}
+    .section-head{max-width:720px;margin-bottom:42px}
+    .section-head h2{font-size:38px;line-height:1.1;letter-spacing:-1.5px;margin-bottom:13px}
+    .section-head p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{border:1px solid var(--line);border-radius:14px;padding:27px;background:white}
+    .card .num{font-size:12px;color:var(--gold);font-weight:800;letter-spacing:1px}
+    .card h3{font-size:20px;margin:12px 0 8px}
+    .card p{color:var(--muted);font-size:15px}
+    .band{background:var(--green);color:white}
+    .band .section-head p{color:#cbdad2}
+    .band .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15)}
+    .band .card p{color:#cbdad2}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .step{padding:24px 0;border-top:2px solid var(--gold)}
+    .step strong{font-size:14px;color:var(--gold)}
+    .step h3{margin:8px 0}
+    .step p{color:#cbdad2;font-size:14px}
+    .who{background:var(--soft)}
+    .contact{background:var(--cream)}
+    .contactbox{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+    .contactbox h2{font-size:42px;line-height:1.1;letter-spacing:-1.5px}
+    .contactbox p{color:var(--muted);margin:15px 0 25px}
+    .contactinfo{background:white;border:1px solid var(--line);border-radius:14px;padding:25px}
+    .contactinfo p{margin:0 0 12px}
+    footer{background:#0b2118;color:#b9c8c0;padding:28px 0;font-size:13px}
+    .footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:800px){
+      .links{display:none}
+      .grid,.steps{grid-template-columns:1fr}
+      .contactbox{grid-template-columns:1fr}
+      .hero{padding:65px 0}
+      section{padding:60px 0}
+      h1{letter-spacing:-2px}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container navin">
+      <a class="brand" href="#">ALMOND <span>GROUP</span></a>
+      <div class="links">
+        <a href="#solutions">Solutions</a>
+        <a href="#approach">Approach</a>
+        <a href="#who">Who we serve</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="btn" href="#contact">Talk to us</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">AI Consulting • Africa</div>
+        <h1>Helping organisations <span>work smarter with AI.</span></h1>
+        <p>Almond Group of Consultants helps NGOs, development organisations and public-health organisations identify repetitive work, apply practical AI tools, and build more efficient workflows.</p>
+        <div class="actions">
+          <a class="btn" href="#contact">Explore a workflow</a>
+          <a class="btn alt" href="#solutions">View solutions</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">What we improve</div>
+          <h2>Practical AI for the work organisations already do.</h2>
+          <p>We focus on high-frequency workflows where better systems can save staff time, improve consistency and strengthen delivery.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><div class="num">01</div><h3>Proposal & Grant Work</h3><p>Structure, draft, review and improve funding documents while keeping organisational requirements in view.</p></article>
+          <article class="card"><div class="num">02</div><h3>Programme Reporting</h3><p>Turn field information and programme records into clearer reports, briefs and management-ready outputs.</p></article>
+          <article class="card"><div class="num">03</div><h3>MEAL & Data Workflows</h3><p>Reduce repetitive work around data cleaning, summaries, indicator reporting and knowledge extraction.</p></article>
+          <article class="card"><div class="num">04</div><h3>Research Support</h3><p>Accelerate literature workflows, evidence synthesis, research organisation and analytical preparation.</p></article>
+          <article class="card"><div class="num">05</div><h3>Knowledge Management</h3><p>Make organisational documents easier to search, summarise and turn into usable institutional knowledge.</p></article>
+          <article class="card"><div class="num">06</div><h3>Administrative Automation</h3><p>Identify repetitive internal tasks that can be streamlined with existing AI and automation tools.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="approach">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Our approach</div>
+          <h2>Assess. Automate. Implement. Improve.</h2>
+          <p>We start with the workflow and the business problem — not with technology for its own sake.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><strong>01</strong><h3>Assess</h3><p>Map repetitive work, bottlenecks, risks and opportunities.</p></div>
+          <div class="step"><strong>02</strong><h3>Automate</h3><p>Select practical AI tools and design the workflow.</p></div>
+          <div class="step"><strong>03</strong><h3>Implement</h3><p>Build, test and document a usable solution.</p></div>
+          <div class="step"><strong>04</strong><h3>Improve</h3><p>Measure results and refine the workflow over time.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="who" id="who">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Who we serve</div>
+          <h2>Built around development-sector realities.</h2>
+          <p>Our initial focus is organisations where staff spend significant time producing documents, managing information, analysing data and coordinating programmes.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><h3>NGOs</h3><p>Programme teams, operations teams, fundraising teams and leadership.</p></article>
+          <article class="card"><h3>Development Organisations</h3><p>Teams working across programmes, partnerships, grants and reporting.</p></article>
+          <article class="card"><h3>Public Health Organisations</h3><p>Organisations managing research, data, community programmes and health information.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contactbox">
+        <div>
+          <div class="eyebrow">Start a conversation</div>
+          <h2>Have a workflow that wastes too much time?</h2>
+          <p>Tell us what your team repeatedly does. We'll help identify whether AI can make the process faster, clearer or more scalable.</p>
+          <a class="btn" href="mailto:hello@almondgroup.co.zm">Contact Almond Group</a>
+        </div>
+        <div class="contactinfo">
+          <p><strong>Almond Group of Consultants</strong></p>
+          <p>AI consulting for NGOs, development organisations and public-health organisations.</p>
+          <p><strong>Email:</strong> hello@almondgroup.co.zm</p>
+          <p><strong>Location:</strong> Zambia</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footerin">
+      <span>© 2026 Almond Group of Consultants. All rights reserved.</span>
+      <span>AI • Consulting • Development</span>
+    </div>
+  </footer>
+</body>
+</html>
